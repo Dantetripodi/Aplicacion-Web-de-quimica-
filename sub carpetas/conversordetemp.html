@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
-    <nav class="nav">
+<nav class="nav">
         <ul class="list">
 
             <li class="list__item">
@@ -22,7 +21,7 @@
             <li class="list__item list__item--click">
                 <div class="list__button list__button--click">
                     <img src="assets/docs.svg" class="list__img">
-                    <a href="sub carpetas/teoriadequimica.html" class="nav__link">Teoria de Quimica</a>
+                    <a href="teoriadequimica.html" class="nav__link">Teoria de Quimica</a>
                     
                 </div>
 
@@ -33,14 +32,14 @@
             <li class="list__item">
                 <div class="list__button">
                     <img src="assets/stats.svg" class="list__img">
-                    <a href="#" class="nav__link">Constantes</a>
+                    <a href="constantes.html" class="nav__link">Constantes</a>
                 </div>
             </li>
 
             <li class="list__item list__item--click">
                 <div class="list__button list__button--click">
                     <img src="assets/calculator-regular-24.png" class="list__img">
-                    <a href="conversordetemp.html" class="nav__link">Conversor de temperatura</a>
+                    <a href="#" class="nav__link">Conversor de</a>
                     
                 </div>
 
@@ -51,20 +50,46 @@
             <li class="list__item">
                 <div class="list__button">
                     <img src="assets/message.svg" class="list__img">
-                    <a href="#" class="nav__link">Contacto</a>
+                    <a href="contacto.html" class="nav__link">Contacto</a>
                 </div>
             </li>
 
         </ul>
-    </nav>
+</nav>
+<div>
+    
+    <h1 style="text-align: center;"> Conversor de temperaturas </h1>
 
+    cantidad:<input  type="range" id="cantidad" min="0" max="1000" value="0" onchange="convertir()">
+    <span id="valor">0</span><br>
+    
+    Convertir de 
+    <select id="de" onchange="convertir()" >
+       
+        <option value="1">Celsius</option>
+        <option value="2">fahrenheit</option>
+        <option value="3">Kelvin</option>
 
-<header>
+    </select> <br><br>
+    
+    Convertir a
+    <select id="a" onchange="convertir()" > 
+        
+        <option value="1">Celsius</option>
+        <option value="2">fahrenheit</option>
+        <option value="3">Kelvin</option>
 
+    </select><br>
 
-</header>
+    <h2 id="resulatdo"> Resultado:0.00°</h2>
 
     
-    <script src="main.js"></script>
+</div>
+
+
+
+
+    
+ <script src="main.js"></script>
 </body>
 </html>

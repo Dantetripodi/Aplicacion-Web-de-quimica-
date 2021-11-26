@@ -16,3 +16,11 @@ listElements.forEach(listElement = {
     })
 });
 */
+
+function convertir()
+{
+    var valor=parseFloat(document.getElementById("cantidad").value);
+    document.getElementById("valor").innerHTML="<b>"+valor+"</b>";
+    de=document.getElementsById("de").value
+    
+}
