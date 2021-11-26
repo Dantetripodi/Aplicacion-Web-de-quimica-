@@ -78,3 +78,12 @@ body{
     transition: height .4s;
     height: 0;
 }
+.titulo  {
+    text-align: center;
+    background-color: white;
+    border: black 1px solid;
+    position: absolute;
+    bottom: 500px;
+    left: 555px;
+}
+
